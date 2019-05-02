@@ -1,0 +1,28 @@
+---
+title: "HW1"
+author: "Madeline Berger"
+date: "5/2/2019"
+output: html_document
+---
+
+##Import and Tidy 
+###1. Read the parcels data as is into a parcels_raw tibble
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+
+parcels_raw <- read_csv("Santa_Barbara_County_parcels_2011.csv")
+
+```
+
+
+###2. Copy only the following coluns into a parcels tibble 
+```{r}
+
+
+
+
+```
+
+
