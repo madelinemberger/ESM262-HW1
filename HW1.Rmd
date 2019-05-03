@@ -4,7 +4,7 @@ author: "Madeline Berger"
 date: "5/2/2019"
 output: html_document
 ---
-
+#due at the end of next Tuesday 
 ##Import and Tidy 
 ###1. Read the parcels data as is into a parcels_raw tibble
 ```{r setup, include=FALSE}
@@ -17,12 +17,25 @@ parcels_raw <- read_csv("Santa_Barbara_County_parcels_2011.csv")
 ```
 
 
-###2. Copy only the following coluns into a parcels tibble 
+###2. Copy only the following colunms into a parcels tibble 
 ```{r}
 
-
+parcels <- select(parcels_raw, 
+                  apn = APN,
+                  situs1 = Situs1,
+                  situs2 = Situs2,
+                  acreage = Acreage,
+                  usecode = UseCode,
+                  nontaxcode = NonTaxCode,
+                  agpres = AgPres,
+                  landvalue = LandValue,
+                  net_impr = Net_Impr,
+                  net_av = Net_AV,
+                  mailing1 = M_Address1,
+                  mailing2 = M_Address2)
 
 
 ```
 
 
+Later, see that you can weight by the area of the county, or weight by parcel($/parcel), and then by the area. Do it the first way 
